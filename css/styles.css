@@ -209,7 +209,6 @@ figure {
   .site-footer {
     background-color: #000;
     color: #fff;
-    overflow: hidden;
   }
   .footer-nav,
   .about {
@@ -223,21 +222,16 @@ figure {
 
 /*-- EXPAND TO 992px ---------------------------------------*/
 @media (min-width: 992px) {
-  main {
-    overflow: hidden;
-  }
   .movie:not(:first-of-type) {
     width: 33.333333%;
     float: left;
   }
-  .movie:not(:first-of-type) .movie-backdrop {
+  .movie:not(:first-of-type) .movie-backdrop,
+  .movie:not(:first-of-type) .movie-overview  {
     display: none;
   }
   .movie:not(:first-of-type) .movie-poster {
     display: inherit;
-  }
-  .movie:not(:first-of-type) .movie-overview {
-    display: none;
   }
 }
 
