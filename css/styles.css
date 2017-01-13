@@ -242,6 +242,7 @@ figure {
 }
 
 /*-- EXPAND TO 1280px ---------------------------------------*/
+@media (min-width: 1280px) {
   .movie {
     width: 33.333333%;
     float: left;
@@ -255,3 +256,4 @@ figure {
   .movie .movie-overview {
     display: none;
   }
+}
