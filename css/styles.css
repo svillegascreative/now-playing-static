@@ -1,4 +1,4 @@
-/* BASE styles */
+/* BASE ---------------------------------------*/
 
 html {
   box-sizing: border-box;
@@ -15,18 +15,9 @@ html {
 
 body {
   margin: 0;
-
-  /*
-    We need to add some padding to the bottom of the body on mobile so that
-     the footer won't get covered by our navigation
-  */
   padding-bottom: 60px;
 }
 
-/*
-  This rule ensure that all images always fit in their container
-   but are never stretched beyond their native resolution
-*/
 img {
   max-width: 100%;
 }
@@ -36,8 +27,6 @@ figure {
   padding: 0;
 }
 
-
-/* CLEARFIX - for ensuring floated elements are contained in their parent */
 .clearfix::after {
   content: "";
   display: table;
@@ -45,7 +34,7 @@ figure {
 }
 
 
-/* NAVIGATION styles */
+/* NAVIGATION  ---------------------------------------*/
 .site-logo {
   position: fixed;
   top: 1rem;
@@ -53,7 +42,7 @@ figure {
   width: 80px;
   height: 80px;
   margin: 0;
-  z-index: 100;
+  z-index: 200;
 }
 
 .site-nav {
@@ -100,7 +89,7 @@ figure {
 }
 
 
-/* MOVIE styles */
+/* MOVIES --------------------------------------- */
 .movie {
   position: relative;
 }
@@ -162,7 +151,7 @@ figure {
 }
 
 
-/* FOOTER styles */
+/* FOOTER --------------------------------------- */
 .site-footer {
   text-align: center;
 }
@@ -176,11 +165,6 @@ figure {
   margin-right: 0.5em;
 }
 
-/*
-  The :last-child pseudo-selector lets you select only the last element
-    within a containing element. Similarly, there's a :first-child pseudo-selector
-    to select the first child of a containing element.
-*/
 .footer-nav-item:last-child {
   margin-right: 0;
 }
@@ -194,4 +178,39 @@ figure {
 
 .about > p {
   margin: 0;
+}
+
+/*-- EXPAND TO 768px ---------------------------------------*/
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+  .site-logo {
+    width: 60px;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  .site-nav {
+    width: auto;
+    height: 100%;
+    right: auto;
+    padding: 80px 0 0 0;
+  }
+  .site-nav-item {
+    float: none;
+    width: auto;
+  }
+  .site-nav-item > .fa {
+    font-size: 2.2rem;
+  }
+  .movie-details {
+    padding-left: 90px;
+  }
+  .movie-overview {
+    display: inherit;
+  }
+  .footer-nav,
+  .about {
+    margin-left: 75px;
+  }
 }
