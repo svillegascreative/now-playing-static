@@ -210,12 +210,18 @@ figure {
     display: inherit;
   }
   .site-footer {
-    margin-left: 75px;
+    padding-left: 75px;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
   }
   .footer-nav,
   .about {
     width: 50%;
     float: left;
+  }
+  .about {
+    background-color: #000;
   }
 }
 
