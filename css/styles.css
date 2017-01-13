@@ -183,7 +183,7 @@ figure {
 /*-- EXPAND TO 768px ---------------------------------------*/
 @media (min-width: 768px) {
   body {
-    padding-bottom: 0;
+    padding: 0 0 0 75px;
   }
   .site-logo {
     width: 60px;
@@ -194,7 +194,7 @@ figure {
     width: auto;
     height: 100%;
     right: auto;
-    padding: 80px 0 0 0;
+    padding-top: 80px;
   }
   .site-nav-item {
     float: none;
@@ -203,14 +203,10 @@ figure {
   .site-nav-item > .fa {
     font-size: 2.2rem;
   }
-  .movie-details {
-    padding-left: 90px;
-  }
   .movie-overview {
     display: inherit;
   }
   .site-footer {
-    padding-left: 75px;
     background-color: #000;
     color: #fff;
     overflow: hidden;
@@ -227,5 +223,20 @@ figure {
 
 /*-- EXPAND TO 992px ---------------------------------------*/
 @media (min-width: 992px) {
-
+  main {
+    overflow: hidden;
+  }
+  .movie:not(:first-of-type) {
+    width: 33.333333%;
+    float: left;
+  }
+  .movie:not(:first-of-type) .movie-backdrop {
+    display: none;
+  }
+  .movie:not(:first-of-type) .movie-poster {
+    display: inherit;
+  }
+  .movie:not(:first-of-type) .movie-overview {
+    display: none;
+  }
 }
