@@ -240,3 +240,18 @@ figure {
     display: none;
   }
 }
+
+/*-- EXPAND TO 1280px ---------------------------------------*/
+  .movie {
+    width: 33.333333%;
+    float: left;
+  }
+  .movie .movie-backdrop {
+    display: none;
+  }
+  .movie .movie-poster {
+    display: inherit;
+  }
+  .movie .movie-overview {
+    display: none;
+  }
