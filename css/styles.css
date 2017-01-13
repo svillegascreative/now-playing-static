@@ -209,8 +209,17 @@ figure {
   .movie-overview {
     display: inherit;
   }
-  .footer-nav,
-  .about {
+  .site-footer {
     margin-left: 75px;
   }
+  .footer-nav,
+  .about {
+    width: 50%;
+    float: left;
+  }
+}
+
+/*-- EXPAND TO 992px ---------------------------------------*/
+@media (min-width: 992px) {
+
 }
